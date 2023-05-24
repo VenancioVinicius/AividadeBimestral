@@ -150,11 +150,7 @@ class ProfessorController extends Controller
      */
     public function destroy($id)
     {
-        $obj = Professor::find($id);
-
-        if(!isset($obj)) { return "<h1>ID: $id não encontrado!"; }
-
-        $obj->destroy();
+        Professor::destroy($id);
 
         return redirect()->route('professores.index');
     }

@@ -12,7 +12,7 @@
             <x-datalist
                 :title="'Eixos'"
                 :crud="'eixos'"
-                :header="['NOME','']"
+                :header="['NOME', 'AÇÕES']"
 
                 :data="$dados"
                 :hide="[true,true]"

@@ -140,11 +140,7 @@ class CursoController extends Controller
      */
     public function destroy($id)
     {
-        $obj = Curso::find($id);
-
-        if(!isset($obj)) { return "<h1>ID: $id não encontrado!"; }
-
-        $obj->destroy();
+        Curso::destroy($id);
 
         return redirect()->route('cursos.index');
     }

@@ -22,7 +22,9 @@
                 <tr>
                     <td>{{$item->nome}}</td>
                     @isset($item->sigla)<td>{{$item->sigla}}</td>@endisset
-                    @isset($item->eixo)<td>{{$item->eixo->nome}}</td>@endisset
+                    @If($crud != "eixos")
+                        @isset($item->eixo)<td>{{$item->eixo->nome}}</td>@endisset
+                    @endif
                     @isset($item->ativo)<td>{{$item->ativo}}</td>@endisset
                     @isset($item->curso)<td>{{$item->curso->nome}}</td>@endisset
                     <td>

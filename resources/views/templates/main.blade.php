@@ -80,7 +80,7 @@
         </div>
         <nav class="navbar fixed-bottom navbar-dark bg-secondary">
             <div class="container-fluid">
-                <span class="text-white fw-light">&copy;
+                <span class="text-white fw-light">&copy ViniciusVenancio
                 </span>
             </div>
         </nav>
