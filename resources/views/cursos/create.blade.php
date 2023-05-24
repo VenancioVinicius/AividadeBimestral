@@ -66,7 +66,8 @@
         </div>
         <div class="row">
             <div class="col" >
-                <div class="form-floating mb-3">
+                <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01" >Eixo</label>
                     <select name="eixo_id" class="form-control {{ $errors->has('eixo_id') ? 'is-invalid' : '' }}">
                         @foreach ($eixos as $item) 
                             <option value="{{$item->id}}">
@@ -79,7 +80,6 @@
                             {{ $errors->first('eixo_id') }}
                         </div>
                     @endif
-                    <label for="eixo_id">Eixo do Curso</label>
                 </div>
             </div>
         </div>

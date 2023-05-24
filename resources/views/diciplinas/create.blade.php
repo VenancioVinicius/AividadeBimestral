@@ -47,7 +47,7 @@
         </div>
         <div class="row">
             <div class="col" >
-                <div class="form-floating mb-3">
+                <div class="input-group mb-3">
                     <label class="input-group-text" for="inputGroupSelect01" >Curso</label>
                         <select name="curso_id" class="form-control {{ $errors->has('curso_id') ? 'is-invalid' : '' }}">
                             @foreach ($dados as $item)
